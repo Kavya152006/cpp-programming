@@ -1,0 +1,28 @@
+#include<iostream> 
+using namespace std; 
+class Tatarao{ 
+Date: Roll No.:
+Programming with C++ Lab Page No.: 
+public: 
+Tatarao() { 
+cout << "The Grand Father : Tatarao" << endl; } 
+}; 
+class Bajji : public Tatarao { 
+public: 
+Bajji() { 
+cout << "The Father : Bajji" << endl; } 
+}; 
+Class Ganga : public Bajji { 
+public: 
+Ganga() { 
+cout << "This is me : Ganga" << endl; } 
+}; 
+class Future : public Ganga{ 
+public: 
+Future() { 
+cout << "This is my son : Future One" << endl; } 
+}; 
+int main() { 
+Future obj; 
+return 0; 
+}
