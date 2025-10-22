@@ -1,0 +1,15 @@
+class ClassName {
+ int data;
+public:
+ ClassName(int d = 0) : data(d) {}
+ // Unary operator overloading (prefix form)
+ ClassName operator++() {
+ data++;
+ return *this;
+ }
+ // Unary operator overloading (postfix form)
+ ClassName operator++(int) {
+ ClassName temp = *this;
+ data++;
+ return temp;}
+}
